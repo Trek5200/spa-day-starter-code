@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: blue;
 }
 
 div {
@@ -7,7 +7,7 @@ div {
     width: 50%;
     padding: 10px;
     text-align: center;
-    background-color: white;
+    background-color: orange;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
         width: 50%;
         padding: 10px;
         text-align: center;
-        background-color: white;
+        background-color: green;
 }
 
 table {
@@ -23,4 +23,11 @@ table {
             width: 50%;
             padding: 10px;
             text-align: center;
+}
+
+.oval {
+  width: 50px;
+  height: 100px;
+  background: red;
+  border-radius: 25px / 50px;
 }

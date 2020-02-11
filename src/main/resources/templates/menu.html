@@ -27,12 +27,12 @@
     </table>
 
     <div>
-        <th:block th:if = ${manipedi.equals("manicure")}>
+        <th:block th:if = "${manipedi.equals('manicure') or manipedi.equals('both')}">
             <h2>Manicure</h2>
             <p th:replace="fragments :: manicureDescription">
             </p>
         </th:block>
-        <th:block th:if = ${manipedi.equals("pedicure")}>
+        <th:block th:if = "${manipedi.equals('pedicure') or manipedi.equals('both')}">
             <h2>Pedicure</h2>
             <p th:replace="fragments :: pedicureDescription">
             </p>
@@ -40,4 +40,8 @@
     </div>
 </div>
 </body>
+<footer>
+<!--    <div class="oval"></div>-->
+    <table th:replace="fragments :: color"></table>
+</footer>
 </html>
