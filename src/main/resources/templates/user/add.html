@@ -9,12 +9,15 @@
     <form method = 'post' th:action="@{/user}">
         <label>
             Username:
-            <input type = 'text' name = 'username' th:value="${username}">
+            <input type = 'text' name = 'username' th:value="${user.username}">
+            <p class="error" th:errors="${user.username}"></p>
         </label>
 
         <label>
             Email:
-            <input type = 'email' name = 'email' th:value="${email}">
+            <input name = 'email' th:value="${user.email}">
+            <p class="error" th:errors="${user.email}"></p>
+<!--            removed "type = 'email'" to make it easier to test the server-side validation-->
         </label>
 
         <label>
